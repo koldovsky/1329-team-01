@@ -33,4 +33,8 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 -Vlad Pylypenko
 - Anastasiia Kravchenko
 -Vlad Finiak
+<<<<<<< HEAD
 -Demianov Nikita
+=======
+-Anton Kachanovski
+>>>>>>> 35ffc4e8b6bd24ab7e7a9c8d0734b29ccbaad937
