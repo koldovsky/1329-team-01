@@ -30,7 +30,7 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 # Team
 
 -Dmytro Sushko
--Vlad Pylypenko
+- Vlad Pylypenko
 <<<<<<< HEAD
 -Anastasiia Kravchenko
 Dmitry Hrunt
