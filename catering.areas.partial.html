@@ -1,38 +1,128 @@
-<h2 class="catering-areas__title">AREAS</h2>
-<p class="catering-areas__subtitle">Delivery Zone</p>
-<p class="catering-areas__description">We deliver to:</p>
+<style>
+    .delivery-zone-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 20px;
+    }
 
-<svg width="20" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" style="max-width:100%" height="100%">
-    <path
-        d="M6 0c3.3137 0 6 2.6863 6 6s-2.6863 6-6 6-6-2.6863-6-6 2.6863-6 6-6zm2.6464 3.6464L5 7.293 3.3536 5.6464l-.7072.7072L5 8.707l4.3536-4.3535-.7072-.7072z"
-        fill="#F9B233" fill-rule="evenodd"></path>
-</svg>
-<p class="catering-areas__description">Long Beach;</p>
+    .delivery-info {
+        flex: 1;
+        margin-right: 7%;
+        /* Отступ справа от текста */
+        padding-left: 10%;
+        /* Отступ слева, чтобы текст находился на нужной позиции */
+        text-align: left;
+        /* Текст выровнен по левому краю */
+    }
 
-<svg width="20" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" style="max-width:100%" height="100%">
-    <path
-        d="M6 0c3.3137 0 6 2.6863 6 6s-2.6863 6-6 6-6-2.6863-6-6 2.6863-6 6-6zm2.6464 3.6464L5 7.293 3.3536 5.6464l-.7072.7072L5 8.707l4.3536-4.3535-.7072-.7072z"
-        fill="#F9B233" fill-rule="evenodd"></path>
-</svg>
-<p class="catering-areas__description">Pasadena;</p>
+    .catering-areas__title {
+        font-size: 23px;
+        color: red;
+        font-family: Arial, sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-bottom: 1px;
+        text-transform: uppercase;
+        display: block;
+    }
 
-<svg width="20" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" style="max-width:100%" height="100%">
-    <path
-        d="M6 0c3.3137 0 6 2.6863 6 6s-2.6863 6-6 6-6-2.6863-6-6 2.6863-6 6-6zm2.6464 3.6464L5 7.293 3.3536 5.6464l-.7072.7072L5 8.707l4.3536-4.3535-.7072-.7072z"
-        fill="#F9B233" fill-rule="evenodd"></path>
-</svg>
-<p class="catering-areas__description">Santa Clarita;</p>
+    .catering-areas__subtitle {
+        font-size: 40px;
+        font-weight: bold;
+        /* Жирный шрифт */
+        font-family: Verdana, sans-serif;
+        color: #333;
+        margin-bottom: 20px;
+    }
 
-<svg width="20" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" style="max-width:100%" height="100%">
-    <path
-        d="M6 0c3.3137 0 6 2.6863 6 6s-2.6863 6-6 6-6-2.6863-6-6 2.6863-6 6-6zm2.6464 3.6464L5 7.293 3.3536 5.6464l-.7072.7072L5 8.707l4.3536-4.3535-.7072-.7072z"
-        fill="#F9B233" fill-rule="evenodd"></path>
-</svg>
-<p class="catering-areas__description">Anaheim.</p>
+    .catering-areas__description {
+        font-size: 16px;
+        /* Размер текста описания */
+        font-family: Verdana, sans-serif;
+        /* Шрифт Verdana для чистого вида */
+        color: #333;
+        /* Темно-серый цвет текста */
+        margin-bottom: 15px;
+        /* Отступ снизу */
+    }
 
-<p class="catering-areas__description">Delivery to more remote areas is also possible in individual cases.</p>
+    .delivery-list {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        /* Отступ снизу после списка */
+    }
 
-<iframe
-    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1652.8366127443!2d-118.2446061!3d34.0522525!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c648da152a13%3A0x87c326b4489358b1!2sLADOT%20Headquarters!5e0!3m2!1sru!2sua!4v1736433824938!5m2!1sru!2sua"
-    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"></iframe>
+    .delivery-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+
+    .delivery-item svg {
+        margin-right: 10px;
+    }
+
+    .map-container {
+        flex-grow: 1;
+        max-width: 70%;
+    }
+
+    .map-container iframe {
+        width: 100%;
+        height: 520px;
+    }
+</style>
+
+<div class="delivery-zone-container">
+    <div class="delivery-info">
+        <h2 class="catering-areas__title">AREAS</h2>
+        <p class="catering-areas__subtitle">Delivery Zone</p>
+        <p class="catering-areas__description">We deliver to:</p>
+
+        <div class="delivery-list">
+            <div class="delivery-item">
+                <svg width="20" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M6 0c3.3137 0 6 2.6863 6 6s-2.6863 6-6 6-6-2.6863-6-6 2.6863-6 6-6zm2.6464 3.6464L5 7.293 3.3536 5.6464l-.7072.7072L5 8.707l4.3536-4.3535-.7072-.7072z"
+                        fill="#F9B233" fill-rule="evenodd"></path>
+                </svg>
+                <p class="catering-areas__description">Long Beach;</p>
+            </div>
+            <div class="delivery-item">
+                <svg width="20" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M6 0c3.3137 0 6 2.6863 6 6s-2.6863 6-6 6-6-2.6863-6-6 2.6863-6 6-6zm2.6464 3.6464L5 7.293 3.3536 5.6464l-.7072.7072L5 8.707l4.3536-4.3535-.7072-.7072z"
+                        fill="#F9B233" fill-rule="evenodd"></path>
+                </svg>
+                <p class="catering-areas__description">Pasadena;</p>
+            </div>
+            <div class="delivery-item">
+                <svg width="20" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M6 0c3.3137 0 6 2.6863 6 6s-2.6863 6-6 6-6-2.6863-6-6 2.6863-6 6-6zm2.6464 3.6464L5 7.293 3.3536 5.6464l-.7072.7072L5 8.707l4.3536-4.3535-.7072-.7072z"
+                        fill="#F9B233" fill-rule="evenodd"></path>
+                </svg>
+                <p class="catering-areas__description">Santa Clarita;</p>
+            </div>
+            <div class="delivery-item">
+                <svg width="20" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M6 0c3.3137 0 6 2.6863 6 6s-2.6863 6-6 6-6-2.6863-6-6 2.6863-6 6-6zm2.6464 3.6464L5 7.293 3.3536 5.6464l-.7072.7072L5 8.707l4.3536-4.3535-.7072-.7072z"
+                        fill="#F9B233" fill-rule="evenodd"></path>
+                </svg>
+                <p class="catering-areas__description">Anaheim.</p>
+            </div>
+        </div>
+
+        <p class="catering-areas__description">Delivery to more remote areas is also possible in individual cases.</p>
+    </div>
+
+    <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1652.8366127443!2d-118.2446061!3d34.0522525!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c648da152a13%3A0x87c326b4489358b1!2sLADOT%20Headquarters!5e0!3m2!1sru!2sua!4v1736433824938!5m2!1sru!2sua"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
