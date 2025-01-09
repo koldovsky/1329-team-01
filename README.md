@@ -33,7 +33,7 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 - Vlad Pylypenko
 - Anastasiia Kravchenko
 - Dmitry Hrunt
-- Anastasiia Kravchenko
+- Anastasiia Khimchyk
 - Vlad Finiak
 - Demianov Nikita
 - Anton Kachanovski
