@@ -1,15 +1,55 @@
 <!-- Anastasiia Kravchenko -->
-
-<div class="quick-catering-request" id="quick-catering-request">
-    <h3 class="quick-catering-request__header3">Hire Us</h3>
-    <p class="quick-catering-request__form-name">Quick Catering Request</p>
-    <form action="#" class="quick-catering-request__form" id="quick-catering-request__form">
-        <fieldset class="quick-catering-request__contact-info-fields" id="quick-catering-request__contact-info-fields">
-            <legend>We will contact you soon to agree on details and throw a gastronomic party!</legend>
-            <input type="text" id="quick-catering-request__name" name="name" placeholder="Enter your full name" required><br>
-            <input type="tel" id="quick-catering-request__phone-number" name="number" placeholder="Enter your phone number" pattern="\d{3}-\d{3}-\d{4}" required><br>
-            <input type="email" id="quick-catering-request__email" name="email" placeholder="Enter your email" required>
+<section
+  class="quick-catering-request__section"
+  id="quick-catering-request__section"
+>
+  <div class="quick-catering-request__container">
+    <div
+      class="quick-catering-request__form_container"
+      id="quick-catering-request__form_container"
+    >
+      <h4 class="quick-catering-request__hire-us">Hire Us</h4>
+      <h3 class="quick-catering-request__form-name">Quick Catering Request</h3>
+      <form
+        action="#"
+        class="quick-catering-request__form"
+        id="quick-catering-request__form"
+      >
+        <fieldset
+          class="quick-catering-request__contact-info-fields"
+          id="quick-catering-request__contact-info-fields"
+        >
+          <legend>
+            We will contact you soon to agree on details and throw a gastronomic
+            party!
+          </legend>
+          <input
+            type="text"
+            id="quick-catering-request__name"
+            name="name"
+            placeholder="Enter your full name"
+            required
+          /><br />
+          <input
+            type="tel"
+            id="quick-catering-request__phone-number"
+            name="number"
+            placeholder="Enter your phone number"
+            pattern="\d{3}-\d{3}-\d{4}"
+            required
+          /><br />
+          <input
+            type="email"
+            id="quick-catering-request__email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
         </fieldset>
-        <button type="submit" onclick="alert('We will contact you ASAP')">Send</button>
-    </form>
-</div>
+        <button type="submit" onclick="alert('We will contact you ASAP')">
+          Send
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
