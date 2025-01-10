@@ -43,6 +43,11 @@
     </main>
     <footer>
       <section
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="index.footer-block.partial.html"
+      ></section>
+      <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="global.footer.partial.html"
