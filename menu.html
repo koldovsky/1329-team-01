@@ -32,8 +32,13 @@
       ></div>
     </main>
     <footer>
-      <section
+      <div
         data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="menu.catering-link.partial.html"
+      ></div>
+      <section
+      data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="global.footer.partial.html"
       ></section>
