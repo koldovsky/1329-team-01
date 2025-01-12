@@ -1,89 +1,16 @@
-<style>
-
-    .form-container {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        min-height: calc(100vh - 100px);
-        width: 100%;
-        position: relative;
-        /*margin: 0;
-        padding: 0;
-        background: url('img/catering-photo/burger_photo.jpeg') no-repeat center center fixed;
-        background-size: cover*/
-    }
-
-    .feedback-form {
-        position: absolute;
-        left: 60%;
-        transform: translateX(-50%);
-        background-color: #ffffff;
-        color: rgb(0, 0, 0);
-        margin: 40px;
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        width: 450px;
-        gap: 10px
-    }
-
-    .feedback-form input,
-    .feedback-form textarea,
-    .feedback-form select {
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 20px;
-        background-color: #faf1e4;
-        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
-        outline: none;
-    }
-
-    .feedback-form input:focus,
-    .feedback-form textarea:focus {
-        border: 1px solid #faf1e4;
-    }
-
-    .feedback-form textarea {
-        resize: none;
-        height: 100px;
-    }
-
-    .feedback-form .consent {
-        display: flex;
-        align-items: center;
-    }
-
-    .feedback-form .consent input {
-        margin-right: 10px;
-    }
-
-    .feedback-form button {
-        padding: 10px;
-        border: none;
-        border-radius: 20px;
-        background-color: #B5655D;
-        color: #ffffff;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-    .feedback-form button:hover {
-        background-color: #94494E;
-    }
-</style>
-
 <div class="form-container">
     <section class="feedback-form">
-        <h2>REQUEST</h2>
-        <p>Fill in a Catering Inquiry</p>
+        <h2 class="request-title">REQUEST</h2>
+        <p class="request-subtitle">Fill in a Catering</p>
+        <p class="request-subtitle">Inquiry</p>
+
         <input type="text" id="fullName" placeholder="Full name" required>
         <input type="text" id="phone" placeholder="Phone number" required>
         <input type="email" id="email" placeholder="E-mail" required>
-        <input type="date" id="date" placeholder="Event date" required>
+        <input type="text" id="date" placeholder="Event date" required>
         <input type="number" id="nmbr_of_ppl" placeholder="Number of people" required>
         <textarea id="details" placeholder="Leave any questions or specific notes" maxlength="500"></textarea>
-        <button class="send">Відправити</button>
+        
+        <button class="send">Submit</button>
     </section>
 </div>

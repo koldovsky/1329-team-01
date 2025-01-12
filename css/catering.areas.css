@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+.delivery-zone-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.delivery-info {
+    flex: 1;
+    margin-right: 7%;
+    padding-left: 10%;
+    text-align: left;
+}
+
+.catering-areas__title {
+    font-size: 18px;
+    color: red;
+    font-family: 'Permanent Marker', Arial, sans-serif;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.catering-areas__subtitle {
+    font-size: 47px;
+    font-weight: bold;
+    font-family: Rubik, Arial, sans-serif;
+    color: #333;
+}
+
+.catering-areas__description {
+    font-size: 20px;
+    
+    font-weight: bold;
+    font-family: Verdana, sans-serif;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.catering-areas__marker{
+    font-size: 17px;
+    font-family: Verdana, sans-serif;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.delivery-list {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.delivery-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.delivery-item svg {
+    margin-right: 10px;
+}
+
+.map-container {
+    flex-grow: 1;
+    max-width: 70%;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 600px;
+}

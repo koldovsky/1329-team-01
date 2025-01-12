@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+.form-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: calc(100vh - 100px);
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: #fcbe37;
+  /*background: url('img/catering-photo/burger_photo.jpeg') no-repeat center center;
+    background-size: cover;*/
+}
+
+.request-title {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20px;
+    text-align: center;
+    color: red;
+    margin-bottom: 1px;
+}
+
+.request-subtitle {
+    font-family: 'Rubik', cursive;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 1px;
+}
+
+.feedback-form {
+    position: absolute;
+    left: 50%;
+    transform: translateX(0);
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    margin: 40px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: auto;
+    min-height: 600px;
+    gap: 10px;
+}
+
+.feedback-form input,
+.feedback-form textarea,
+.feedback-form select {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #fbf7ed;
+    box-shadow: none;
+    outline: none;
+    font-size: 16px;
+    color: #666;
+}
+
+.feedback-form input::placeholder,
+.feedback-form textarea::placeholder {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.feedback-form textarea {
+    resize: none;
+    height: 100px;
+}
+
+.feedback-form .consent {
+    display: flex;
+    align-items: center;
+}
+
+.feedback-form .consent input {
+    margin-right: 20px;
+}
+
+.feedback-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #e7272d;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.feedback-form button:hover {
+    background-color: black;
+}
