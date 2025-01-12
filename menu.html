@@ -1,3 +1,4 @@
+<!--Korzun Viktor-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,6 +11,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
     <header>
       <nav
@@ -17,17 +19,27 @@
         data-hx-swap="outerHTML"
         data-hx-get="global.header-nav.partial.html"
       ></nav>
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="menu.header-hero.partial.html"
+      ></div>
     </header>
     <main>
-      <main
+      <div
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="menu.food-info.partial.html"
-      ></main>
+      ></div>
     </main>
     <footer>
-      <section
+      <div
         data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="menu.catering-link.partial.html"
+      ></div>
+      <section
+      data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="global.footer.partial.html"
       ></section>
