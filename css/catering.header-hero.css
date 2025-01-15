@@ -7,15 +7,6 @@
   margin: 0 auto;
 }
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
 .catering-header-hero {
   background-color: #fbbe36;
   min-width: 380px;
