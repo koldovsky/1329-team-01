@@ -15,9 +15,13 @@
 
 :root {
   scroll-behavior: smooth;
+  --font-family-primary: 'Lato', sans-serif;
   --section-name-accent-color: #e7272d;
   --section-main-color: #fbbe36;
+  --header-secondary-color: #efad18;
+  --gray-text-color: #4f5047;
   --white-text-color: #ffffff;
+  --content-container-size: 1200px;
 }
 
 img {
