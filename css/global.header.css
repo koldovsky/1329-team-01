@@ -23,7 +23,8 @@
     .header__menu {
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        
 
         height: 102px;
         background-color: var(--section-main-color);
@@ -60,5 +61,17 @@
 @media (max-width: 991px) {
     .adaptive-mobile {
         display: none !important;
+    }
+
+}
+
+@media (min-width: 991px) {
+    .adaptive-pc {
+        display: none !important;
+    }
+
+    .header__menu{
+        justify-content: space-evenly !important;
+        padding: 15px !important;
     }
 }
