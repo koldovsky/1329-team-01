@@ -1,9 +1,38 @@
 .menu-hero{
-    box-sizing: border-box;
     background-color: var(--section-main-color);
+    display: flex;
+    min-width: 380px;
+    margin: 0 auto;
+    padding: 80px 32px;
+    position: relative;
+    flex-direction: column;
 }
-.menu-hero__title{
-    font-family:'Permanent Marker', Arial, sans-serif ;
-    color:var(--section-name-accent-color)
 
+
+.menu-hero__title{
+    color:var(--section-name-accent-color);
+    font-family: 'Permanent Marker', serif;
 }
+
+.menu-hero__subtitle{
+    color: var(--white-text-color);
+    font-family: 'Rubik', serif;
+}
+
+.menu-hero__description{
+    display: flex;
+    color: var(--white-text-color);
+    font-family: 'Lato', serif;  
+    
+    
+}
+
+@media (min-width: 768px) {
+    .menu-hero__block{
+        flex-direction: column;
+    }
+    .menu-hero{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    }
