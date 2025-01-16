@@ -5,6 +5,7 @@
         align-items: center;
         justify-content: space-evenly;
 
+
         height: 51px;
         color: var(--white-text-color);
         background-color: var(--header-secondary-color);
@@ -23,7 +24,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 15px;
+        padding: 16px;
 
         height: 102px;
         background-color: var(--section-main-color);
