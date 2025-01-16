@@ -1,0 +1,9 @@
+.menu-hero{
+    box-sizing: border-box;
+    background-color: var(--section-main-color);
+}
+.menu-hero__title{
+    font-family:'Permanent Marker', Arial, sans-serif ;
+    color:var(--section-name-accent-color)
+
+}

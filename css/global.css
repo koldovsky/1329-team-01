@@ -9,11 +9,13 @@
 }
 
 :root {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;    
     --section-name-accent-color: #e7272d;
+    --section-main-color: #fbbe36;
 }
 
 img {
     display: block;
     max-width: 100%;
 }
+
