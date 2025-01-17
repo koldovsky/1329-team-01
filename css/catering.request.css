@@ -1,7 +1,4 @@
-/*Vlad Pylypenko*/
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
+/* Vlad Pylypenko */
 .form-container {
     display: flex;
     justify-content: flex-start;
@@ -11,9 +8,9 @@
     position: relative;
     margin: 0;
     padding: 0;
-    background-color: #fcbe37;
-  /*background: url('img/catering-photo/burger_photo.jpeg') no-repeat center center;
-    background-size: cover;*/
+    background: url('../img/catering-photo/burger_photo.jpeg') no-repeat center center;
+    background-size: cover;
+    background-color: #f4f4f4;
 }
 
 .request-title {
@@ -102,4 +99,32 @@
 
 .feedback-form button:hover {
     background-color: black;
+}
+
+@media (max-width: 768px) {
+    .feedback-form {
+        position: static; 
+        transform: translateX(0); 
+        margin: 20px auto; 
+        width: 90%; 
+        max-width: 400px; 
+        padding: 15px; 
+        gap: 8px; 
+    }
+
+    .feedback-form input,
+    .feedback-form textarea,
+    .feedback-form select {
+        padding: 8px; 
+        font-size: 14px; 
+    }
+
+    .feedback-form textarea {
+        height: 80px; 
+    }
+
+    .feedback-form button {
+        font-size: 14px; 
+        padding: 10px; 
+    }
 }
