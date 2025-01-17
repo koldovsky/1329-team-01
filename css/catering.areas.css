@@ -2,7 +2,7 @@
 .delivery-zone-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center; /* Центрирование текста по высоте */
     margin: 20px;
 }
 
@@ -11,6 +11,10 @@
     margin-right: 7%;
     padding-left: 10%;
     text-align: left;
+    display: flex;
+    flex-direction: column; /* Чтобы текст оставался вертикально ориентированным */
+    justify-content: center; /* Центрирование по вертикали */
+    height: 100%; /* Наследуйте высоту от родителя или задайте вручную */
 }
 
 .catering-areas__title {
