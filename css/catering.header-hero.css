@@ -2,10 +2,9 @@
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .catering-header-hero {
-  background-color: #fbbe36;
-  min-width: 380px;
+  background-color: var(--section-main-color);
+  min-width: 320px;
   margin: 0 auto;
   padding: 80px 32px;
   position: relative;
@@ -15,13 +14,14 @@
 
 .catering-header-hero__title {
   font-family: "Permanent Marker", sans-serif;
-  color: #e7272d;
+  color: var(--section-name-accent-color);
   font-size: 16px;
+  font-weight: lighter;
 }
 
 .catering-header-hero__subtitle {
   font-family: "Rubik", sans-serif;
-  color: #ffff;
+  color: var(--white-text-color);
   font-size: 38px;
   font-weight: bold;
   padding-top: 5px;
@@ -29,27 +29,29 @@
 }
 
 .catering-header-hero__description {
-  color: #ffff;
-  font-family: "Lato", sans-serif;
+  color: var(--white-text-color);
+  font-family: var(--font-family-primary);
   font-size: 20px;
-  font-weight: bold;
+  font-weight: bolder; 
+  line-height: 30px;
 }
 
 @media (min-width: 768px) {
   .catering-header-hero {
     flex-direction: row;
     justify-content: space-around;
-    gap: 50px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .catering-header-hero__block {
     flex-direction: column;
   }
 
-
   .catering-header-hero__description {
-    width: 630px;
+    width: 600px;
     padding-top: 25px;
+    justify-content: center;
   }
   .catering-header-hero__subtitle {
     font-size: 47px;

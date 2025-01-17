@@ -1,0 +1,75 @@
+.catering-hire-us__image {
+  width: 1140px;
+  max-width: 100%;
+  max-height: 100%;
+}
+.hire-us {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.catering-hire-us__content {
+  padding: 90px 30px;
+  margin-left: 10px;
+}
+
+.catering-hire-us__title {
+  font-family: "Permanent Marker", sans-serif;
+  color: var(--section-name-accent-color);
+  font-size: 16px;
+  font-weight: lighter;
+}
+.catering-hire-us__subtitle {
+  font-family: "Rubik", sans-serif;
+  font-size: 38px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #282623;
+}
+
+.catering-hire-us__description {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  color: #454545;
+  font-weight: bold;
+  padding-bottom: 20px;
+  line-height: 30px;
+}
+
+.catering-hire-us__list {
+  font-family: "Lato", sans-serif;
+  font-size: 17px;
+  color: #454545;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.catering-hire-us__additional-info {
+  font-family: "Lato", sans-serif;
+  font-size: 17px;
+  color: #676767;
+  padding-top: 20px;
+  line-height: 25px;
+}
+
+.catering-hire-us__list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-height: 50px;
+  gap: 10px;
+}
+@media (min-width: 768px) {
+  .catering-hire-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .catering-hire-us__image {
+    width: 100%; 
+    max-width: 1140px; 
+    height: auto; 
+  }
+
+  
+}
