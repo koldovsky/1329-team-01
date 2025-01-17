@@ -11,6 +11,7 @@
     background: url('../img/catering-photo/burger_photo.jpeg') no-repeat center center;
     background-size: cover;
     background-color: #f4f4f4;
+    height: 100vh;
 }
 
 .request-title {
@@ -33,7 +34,7 @@
 .feedback-form {
     position: absolute;
     left: 50%;
-    transform: translateX(0);
+    transform: translateX(0%);
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     margin: 40px;
@@ -42,10 +43,13 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    width: 500px;
-    height: auto;
+    width: 580px;
+    height: 90vh;
     min-height: 600px;
-    gap: 10px;
+
+    /* Автоматическое равномерное распределение элементов */
+    justify-content: space-evenly; /* Или space-between для более строгого вида */
+    gap: 0; /* Дополнительно, если нужно убрать фиксированный отступ между элементами */
 }
 
 .feedback-form input,
