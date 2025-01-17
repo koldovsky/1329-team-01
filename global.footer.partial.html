@@ -1,43 +1,52 @@
-<!-- Nikita Demianov -->
-<div class="footer__top">
-    <div class="footer__info">
-        <img src="./img/global-footer/global-footer-logo.svg" alt="Freddy Burgers Logo" class="footer__logo"> 
-        <p class="footer__description">We prepare delicious burgers and offer side dishes, salads, and beverages. Find us in the LA streets, order delivery, or throw a party with our catering services!</p>
-        <div class="footer__social-links">
-            <a href="#" class="footer__social-link"><img src="./img/global-footer/facebook.svg" width="32" alt="Facebook logo"></a>
-            <a href="#" class="footer__social-link"><img src="./img/global-footer/instagram.svg" width="32" alt="Instagram logo"></a>
-            <a href="#" class="footer__social-link"><img src="./img/global-footer/youtube.svg" width="32" alt="YouTube logo"></a>
-        </div>        
-    </div>
-    <div class="footer__nav">
-        <p class="footer__title">Navigation</p>
+<footer class="footer">
+    <div class="footer__menu">
+        <div class="footer__info">
+            <img src="./img/global-footer/global-footer-logo.svg" alt="Freddy Burgers Logo" class="footer__logo">
+            <p class="footer__description">
+                We prepare delicious burgers and offer side dishes, salads, and beverages.
+                Find us in the LA streets, order delivery, or throw a party with our catering services!
+            </p>
+            <div class="footer__social-links">
+                <svg class="footer__social-svg" viewBox="0 0 32 32" style="border-radius:50%">
+                    <path class="outer_bDW" d="M32 0H0V32H32V0ZM16.9133 25H13.6383V16.0044H12V13.1936H13.6383V10.9374H13.6443C13.7014 8.9864 14.3604 7.129 17.5674 7.0126V7H19.6171V9.8108H17.9447C17.3379 9.8108 16.9133 10.5002 16.9133 11.1568V13.1936H19.8561L19.3702 16.0044H16.9133V25Z" fill-rule="evenodd"></path>
+                    <path d="M16,31 C24.2842712,31 31,24.2842712 31,16 C31,7.71572875 24.2842712,1 16,1 C7.71572875,1 1,7.71572875 1,16 C1,24.2842712 7.71572875,31 16,31 Z M16,32 C7.163444,32 0,24.836556 0,16 C0,7.163444 7.163444,0 16,0 C24.836556,0 32,7.163444 32,16 C32,24.836556 24.836556,32 16,32 Z" class="border_2yy"></path>
+                    <path class="logo_2gS" d="M13.6383 25H16.9133V16.0044H19.3702L19.8561 13.1936H16.9133V11.1568C16.9133 10.5002 17.3379 9.8108 17.9447 9.8108H19.6171V7H17.5674V7.0126C14.3604 7.129 13.7014 8.9864 13.6443 10.9374H13.6383V13.1936H12V16.0044H13.6383V25Z" style="color:#282623;fill:#282623"></path>
+                </svg>
+                                                    
+            </div>
+        </div>
+        <div class="footer__navigation">
+            <p class="footer__navigation-title">Navigation</p>
             <ul class="footer__list">
-                <li class="footer__list-item"><a href="#" class="footer__link">About Us</a></li>
-                <li class="footer__list-item"><a href="#" class="footer__link">Menu</a></li>
-                <li class="footer__list-item"><a href="#" class="footer__link">Catering</a></li>
-                <li class="footer__list-item"><a href="#" class="footer__link">Contacts</a></li>
+                <li class="footer__list-item"><a href="#" class="footer__list-link">About Us</a></li>
+                <li class="footer__list-item"><a href="#" class="footer__list-link">Menu</a></li>
+                <li class="footer__list-item"><a href="#" class="footer__list-link">Catering</a></li>
+                <li class="footer__list-item"><a href="#" class="footer__list-link">Contacts</a></li>
             </ul>
-    </div>
-    <div class="footer__nav">
-        <p class="footer__title">Customers</p>
+        </div>
+        <div class="footer__customers">
+            <p class="footer__customers-title">Customers</p>
             <ul class="footer__list">
-                <li class="footer__list-item"><a class="footer__link" href="#">Our burgers</a></li>
-                <li class="footer__list-item"><a class="footer__link" href="#">Services</a></li>
-                <li class="footer__list-item"><a class="footer__link" href="#">Our app</a></li>
-                <li class="footer__list-item"><a class="footer__link" href="#">Blog</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Our burgers</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Services</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Our app</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Blog</a></li>
             </ul>
+        </div>
+        <div class="footer__newsletter">
+            <p class="footer__newsletter-title">Subscribe to get the latest news from us:</p>
+            <form action="#" method="post" class="footer__form">
+                <input type="email" id="email" name="email" placeholder="Email*" required class="footer__input"><br><br>
+                <button type="submit" class="footer__button">Subscribe</button>
+            </form>
+        </div>
     </div>
-    <div class="footer__subscribe">
-        <p class="footer__title">Subscribe to get the latest news from us:</p>
-        <form action="#" method="post" class="footer__form">
-            <input type="email" id="email" name="email" placeholder="Email*" required class="footer__input">
-            <button type="submit" class="footer__button">Subscribe</button>
-        </form>
-    </div>
+
+
     <hr class="footer__divider">
+
     <div class="footer__bottom">
-            <p class="footer__copyright">©Created by </p>
-            <p class="footer__rights">All rights Reserved </p>
+        <p class="footer__bottom-copyright">©Created by </p>
+        <p class="footer__bottom-rights">All rights Reserved </p>
     </div>
-</div>
-<!-- END Nikita Demianov -->
+</footer>

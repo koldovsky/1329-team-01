@@ -49,14 +49,14 @@
 
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
     .adaptive-mobile {
         display: none !important;
     }
 
 }
 
-@media (min-width: 991px) {
+@media (min-width: 768px) {
     .adaptive-pc {
         display: none !important;
     }
