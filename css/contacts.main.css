@@ -1,4 +1,30 @@
+.contacts {
+    background-color: #fbf7ed;
+}
+
 .contacts__image {
     width: 50px;
     height: 50px;
+}
+
+.contacts__item {
+    background-color: white;
+    box-shadow: 0 5px 10px 7px rgba(136, 140, 133, 0.05);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 6px;
+    padding: 31px 27px;
+}
+
+.contacts__container {
+    padding: 90px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 50px;
+}
+
+.contacts__description {
+    text-align: center;
 }
