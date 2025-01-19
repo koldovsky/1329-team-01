@@ -27,6 +27,17 @@
   --black-text-color: #282623;
   --contact-us-color: #adadad;
   --contact-us-bgc: #272622;
+  --background-cream-color: #fbf7ed;
+  --paragraph-text-gray-color: #625961;
+  --block-title-size: 56px;
+  --block-title-size-mobile: 38px;
+  --block-title-size-tablet: 47px;
+  --block-title-font: 'Rubik', sans-serif;
+  --subtitle-size: 20px;
+  --heading-size: 30px;
+  --heading-size-mobile: 24px;
+  --heading-size-tablet: 27px;
+  --accent-font: 'Permanent Marker', sans-serif;
 }
 
 img {
