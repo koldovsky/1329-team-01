@@ -84,7 +84,7 @@
 @media (min-width: 769px) {
     .contact-us {
         .contact-us__info {
-            margin: 0 300px;
+            margin: 0 10%;
             flex-direction: row;
             justify-content:space-evenly;
         }
