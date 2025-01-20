@@ -2,3 +2,7 @@
 @import"contacts.main.css";
 @import"global.header.css";
 @import"global.footer.css";
+
+.contacts__container {
+    background-color: #fbf7ed;
+}
