@@ -47,9 +47,8 @@
     height: 90vh;
     min-height: 600px;
 
-    /* Автоматическое равномерное распределение элементов */
-    justify-content: space-evenly; /* Или space-between для более строгого вида */
-    gap: 0; /* Дополнительно, если нужно убрать фиксированный отступ между элементами */
+    justify-content: space-evenly;
+    gap: 0;
 }
 
 .feedback-form input,
