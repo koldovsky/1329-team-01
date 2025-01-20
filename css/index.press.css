@@ -2,8 +2,6 @@
 
 .press-news {
     background-color: var(--background-cream-color);
-    /* min-width: 300px;
-    max-width: 1200px; */
     & .press-news__header-container {
         display: flex;
         flex-direction: column;
@@ -81,9 +79,7 @@
             }
             & .press-news__read-article-button {
                 display: flex;
-                flex: 1 0 auto; 
-                /* width: 147px;
-                height: 51px; */
+                flex: 1 0 auto;
                 width: 9.5rem;
                 height: 3.5rem;
                 margin-bottom: 2rem;
