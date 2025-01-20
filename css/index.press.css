@@ -26,6 +26,7 @@
     }
     & .press-news__articles {
         display: flex;
+        flex: 1 1 auto;
         gap: 20px;
         flex-direction: column;
         align-items: center;
@@ -38,10 +39,11 @@
                 margin-bottom: 50px;
                 font-family: var(--font-family-primary);
                 font-weight: 900;
-                font-size: 15px;
+                font-size: 1rem;
                 & img {
                     border-radius: 15px;
                     margin-bottom: 50px;
+                    object-fit: contain;
                 }
                 & .press-news__article-publisher {
                     color: var(--section-name-accent-color);
@@ -54,13 +56,13 @@
                 & .press-news__vertical-divider {
                     font-weight: normal;
                     color: var(--gray-text-color);
-                    font-size: 25px;
+                    font-size: 2rem;
                 }
             }
             & .press-news__article-name {
                 font-family: var(--block-title-font);
                 font-weight: 600;
-                font-size: var(--heading-size-mobile);
+                font-size: 3rem;
                 margin-bottom: 50px;
                 
             }
@@ -68,26 +70,33 @@
                 margin-bottom: 50px;
                 font-family: var(--font-family-primary);
                 font-weight: 400;
-                font-size: 17px;
+                font-size: 1.2rem;
                 line-height: 1.5;
                 color: var(--paragraph-text-gray-color);
             }
             & .press-news__read-article-button {
                 display: flex;
                 flex: 1 0 auto; 
-                width: 147px;
-                height: 51px;
+                /* width: 147px;
+                height: 51px; */
+                width: 9.5rem;
+                height: 3.5rem;
                 margin-bottom: 50px;
                 background-color: var(--section-main-color);
                 border-radius: 100px;
                 justify-content: center;
                 align-items: center;
                 & a {
-                    font-size: 16.5px;
+                    font-size: 1.2rem;
                     font-family: var(--font-family-primary);
                     font-weight: 700;
                     color: var(--white-text-color);
                     text-decoration: none;
+                    
+                }
+                &:hover {
+                    background-color: var(--black-text-color);
+                    transition: 1s;
                 }
             }
         }
