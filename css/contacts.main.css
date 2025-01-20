@@ -75,7 +75,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 20px; /* Відступ між блоками */
+    gap: 20px; 
 }
 
 .schedule__container {
@@ -86,12 +86,12 @@
 
 .schedule__item {
     flex: 1;
-    min-width: 300px; /* Мінімальна ширина для адаптації */
-    padding: 0; /* Забираємо зайві внутрішні відступи */
+    min-width: 300px;
+    padding: 0; 
 }
 
 .schedule__item-inner {
-    background: #fff;
+    background: var(--white-text-color);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -146,7 +146,7 @@
 
 .schedule__note {
     font-style: italic;
-    color: #555;
+    color: var(--description-color);
 }
 
 .schedule__cta-title {
@@ -162,10 +162,10 @@
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--title-contacts-color);
     border-radius: 5px;
     font-size: 14px;
-    background: #fff6e8;
+    background: var(--background-cream-color);
 }
 
 .schedule__button {
@@ -175,25 +175,25 @@
     font-family: 'Lato', sans-serif;
     padding: 10px;
     font-size: 16px;
-    background-color: #e63946;
-    color: #fff;
+    background-color: var(--red-color);
+    color: var(--white-text-color);
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
 }
 
-.schedule__button:hover {
+/* .schedule__button:hover {
     background-color: #d62839;
     cursor: pointer;
-}
+} */
 
-/* Додаткові стилі для вирівнювання */
+
 .schedule__item:nth-child(2) {
-    margin-top: 0; /* Вирівнюємо другий блок */
+    margin-top: 0; 
 }
 
 .schedule {
     padding-top: 20px;
-    margin-top: 20px; /* Відступ для вирівнювання з картою */
+    margin-top: 20px; 
 }
 
