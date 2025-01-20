@@ -1,0 +1,92 @@
+.contact-us {
+    font-family: var(--font-family-primary);
+    background-color: var(--contact-us-bgc);
+
+    padding: 90px 24px 50px 24px;
+
+    .contact-us__info {
+        display: flex;
+        flex-direction: column;
+
+        .contact-us__info-description {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 30px;
+
+            .contact-us__info-description-title {
+                font-size: 38px;
+                color: var(--white-text-color);
+                font-weight: bold;
+            }
+
+            .contact-us__info-description-subtitle {
+                font-size: 20px;
+                color: var(--white-text-color);
+                font-weight: bold;
+            }
+
+            .contact-us__info-description-text {
+                font-size: 20px;
+                color: var(--contact-us-color);
+            }
+
+            .contact-us__info-description-link {
+                color: var(--white-text-color);
+                background-color: var(--section-main-color);
+                width: 142px;
+                height: 52px;
+                border-radius: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+            }
+        }
+
+        .contact-us__info-addresses {
+
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 30px;
+
+            .contact-us__info-addresses__title,
+            .footer-contact-us__address .footer-contact-us__address-title {
+                color: var(--white-text-color);
+            }
+
+            .contact-us__info-addresses__description,
+            .footer-contact-us__address .footer-contact-us__address-description {
+                color: var(--contact-us-color);
+            }
+        }
+    }
+
+    .contact-us__carousel {
+        overflow-x: auto;
+        white-space: nowrap;
+
+        .contact-us__carousel-items {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            list-style: none;
+
+            .footer-contact-us__carousel-image {
+                width: 100px;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media (min-width: 769px) {
+    .contact-us {
+        .contact-us__info {
+            margin: 0 300px;
+            flex-direction: row;
+            justify-content:space-evenly;
+        }
+    }
+}

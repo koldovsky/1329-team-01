@@ -33,9 +33,26 @@
   --gray-text-color: #4f5047;
   --white-text-color: #ffffff;
   --content-container-size: 1200px;
+<<<<<<< HEAD
   --title-contacts-color: #282623;
   --description-color: #676767;
   --red-color: #e7272d;
+=======
+  --black-text-color: #282623;
+  --contact-us-color: #adadad;
+  --contact-us-bgc: #272622;
+  --background-cream-color: #fbf7ed;
+  --paragraph-text-gray-color: #625961;
+  --block-title-size: 56px;
+  --block-title-size-mobile: 38px;
+  --block-title-size-tablet: 47px;
+  --block-title-font: 'Rubik', sans-serif;
+  --subtitle-size: 20px;
+  --heading-size: 30px;
+  --heading-size-mobile: 24px;
+  --heading-size-tablet: 27px;
+  --accent-font: 'Permanent Marker', sans-serif;
+>>>>>>> 32111a8fd2a33d7de20f5627e1b118adfd472e3e
 }
 
 img {

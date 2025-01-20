@@ -32,20 +32,20 @@
   color: var(--white-text-color);
   font-family: var(--font-family-primary);
   font-size: 20px;
-  font-weight: bolder; 
+  font-weight: bolder;
   line-height: 30px;
 }
 
 @media (min-width: 768px) {
   .catering-header-hero {
     flex-direction: row;
-    justify-content: space-around;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: space-evenly; 
+    gap: 80px; 
   }
 
   .catering-header-hero__block {
-    flex-direction: column;
+    flex-direction: column; 
+    align-self: flex-start;
   }
 
   .catering-header-hero__description {
