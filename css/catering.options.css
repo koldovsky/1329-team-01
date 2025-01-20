@@ -50,7 +50,7 @@
   font-size: 20px;
   font-family: "Lato", sans-serif;
   font-weight: bold;
-  color: #454545;
+  color: var(--darkish-gray-text-color);
   line-height: 30px;
   padding-top: 20px;
 }
@@ -65,7 +65,7 @@
 
 
 .catering-options__option-description {
-    color: #676767;
+    color: var(--description-color);
     font-size: 17px;
     font-family: "Lato", sans-serif;
     line-height: 30px;
