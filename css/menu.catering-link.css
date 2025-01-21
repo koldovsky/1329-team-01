@@ -32,7 +32,7 @@
     text-decoration: none;
     display: inline-block;
     margin: 20px auto 0;
-    background-color: red;
+    background-color: var(--red-color);
     width: 133px;
     height: 52px;
     display: flex;
