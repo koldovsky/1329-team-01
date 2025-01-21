@@ -4,7 +4,7 @@
     margin: 0 auto;
     padding: 80px 32px;
     position: relative;
-    display: flex ;
+    display: flex;
     flex-direction: column;
 }
 
