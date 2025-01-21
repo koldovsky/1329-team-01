@@ -1,0 +1,30 @@
+.menu__catering{
+    background-color: var(--section-main-color);
+    min-width: 320px;
+     margin: 0 auto;
+    padding: 80px 32px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.menu__catering-title{
+    font-family:var(--block-title-font);
+    color: var(--white-text-color);
+    font-size: 38px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 30px;
+  }
+
+ .menu__catering-description{
+    color: var(--white-text-color);
+    font-family: var(--font-family-primary);
+    font-size: 20px;
+    font-weight: bolder;
+    line-height: 30px;
+    .red__star{
+        color:var(--red-color);
+    }
+ }
+
+ 
