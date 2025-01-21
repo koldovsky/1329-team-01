@@ -1,16 +1,4 @@
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    scroll-behavior: smooth;
-
-}
-
+/*Hrunt Dmitry*/
 .promo__details {
     background-color: var(--section-main-color);
     font-family: var(--block-title-font);
