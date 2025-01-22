@@ -21,3 +21,9 @@ function makeNegative(num) {
       return num;
 }
 //End Mykola Kokodynskyy
+
+//Nikita Demianov
+function makeNegative(num) {
+  return Math.abs(num) * -1
+}
+//End Nikita Demianov

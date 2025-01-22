@@ -22,3 +22,9 @@ function greet (name, owner) {
     return "Hello guest";
 }
 //End Mykola Kokodynskyy
+
+//Nikita Demianov
+function greet (name, owner) {
+  return name === owner ? 'Hello boss' : 'Hello guest';
+}
+//End Nikita Demianov
