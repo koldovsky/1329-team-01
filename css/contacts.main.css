@@ -75,19 +75,21 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 20px; 
+    gap: 40px; 
 }
 
 .schedule__container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     gap: 20px;
+    margin-top: 90px;
+    margin-bottom: 100px;
 }
 
 .schedule__item {
     flex: 1;
     min-width: 300px;
-    padding: 0; 
+    padding: 0;
 }
 
 .schedule__item-inner {
@@ -96,7 +98,6 @@
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     flex: 1;
-    min-width: 250px;
 }
 
 .schedule__header {
@@ -105,14 +106,15 @@
 
 .schedule__title {
     color: var(--red-color);
-    font-size: 20px;
+    font-size: 20px; 
     margin: 0;
     font-family: 'Permanent Marker', sans-serif;
+    text-transform: uppercase; 
 }
 
 .schedule__subtitle {
     font-family: 'Rubik', sans-serif;
-    font-size: 36px;
+    font-size: 36px; 
     font-weight: bold;
     margin: 5px 0 20px;
     color: var(--title-contacts-color);
@@ -121,79 +123,85 @@
 .schedule__list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px; 
 }
 
 .schedule__date {
     font-weight: bold;
     font-family: 'Lato', sans-serif;
-    font-size: 24px;
+    font-size: 24px; 
 }
 
 .schedule__time {
     font-family: 'Lato', sans-serif;
     font-size: 17px;
     color: var(--title-contacts-color);
-    font-weight: bold;
 }
 
 .schedule__location {
     font-family: 'Lato', sans-serif;
-    font-size: 17px;
+    font-size: 17px; 
     color: var(--description-color);
-    margin-bottom: 10px;
+    margin-bottom: 5px; 
 }
 
 .schedule__note {
-    font-style: italic;
+    font-size: 17px;
+    font-family: 'Lato', sans-serif;
     color: var(--description-color);
 }
 
 .schedule__cta-title {
-    font-size: 36px;
+    margin-top: 35px;
+    font-size: 36px; 
     color: var(--title-contacts-color);
     font-family: 'Rubik', sans-serif;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
 .schedule__input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid var(--title-contacts-color);
-    border-radius: 5px;
+    width: 85%;
+    padding: 18px;
+    margin-bottom: 25px; 
+    margin-left: 30px;
+    border: 1px;
+    border-radius: 50px;
     font-size: 14px;
-    background: var(--background-cream-color);
+    background: var(--background-cream-color); 
+    height: 35px;
+    outline: none;
 }
 
 .schedule__button {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    margin-left: 30px;
     display: block;
-    width: 100%;
+    width: 85%;
     text-align: center;
     font-family: 'Lato', sans-serif;
-    padding: 10px;
-    font-size: 16px;
+    padding: 6px; 
+    font-size: 15px;
     background-color: var(--red-color);
     color: var(--white-text-color);
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 50px;
     font-weight: bold;
+    transition: background-color 0.3s ease; 
+    height: 35px;
 }
 
-/* .schedule__button:hover {
-    background-color: #d62839;
-    cursor: pointer;
-} */
+.schedule__button:hover {
+    background-color: black;
+}
 
-
-.schedule__item:nth-child(2) {
-    margin-top: 0; 
+.schedule__item-2 {
+    margin-top: 97px; 
 }
 
 .schedule {
     padding-top: 20px;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
-
