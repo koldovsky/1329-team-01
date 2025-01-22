@@ -1,104 +1,118 @@
-@import url(global.css);
+@import './global.css';
 
 .press-news {
     background-color: var(--background-cream-color);
     & .press-news__header-container {
         display: flex;
         flex-direction: column;
-        padding: 100px 24px 100px 24px;
+        padding: 100px 24px 50px 24px;
         align-items: center;
         justify-content: center;
         & .press-news__blog {
             color: var(--section-name-accent-color);
             font-family: var(--accent-font);
+            font-size: 1.5rem;
         }
         & .press-news__header {
             margin-top: 20px;
-            font-size: var(--block-title-size-mobile);
-            /* font-size: 100px; */
+            font-size: 3rem;
             font-family: var(--block-title-font);
         }
         & .press-news__desc {
             margin-top: 25px;
             font-family: var(--font-family-primary);
-            font-size: var(--subtitle-size);
+            font-size: 1.5rem;
             text-align: center;
         }
     }
     & .press-news__articles {
         display: flex;
+        flex: 1 1 auto;
         gap: 20px;
-        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 0 50px 50px 50px;
         & .press-news__article-container {
-            margin: 0 50px 50px 50px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
             & .press-news__article-picture {
-                margin-bottom: 50px;
+                margin-bottom: 2rem;
                 font-family: var(--font-family-primary);
                 font-weight: 900;
-                font-size: 15px;
+                font-size: 1rem;
                 & img {
                     border-radius: 15px;
-                    margin-bottom: 50px;
+                    margin-bottom: 1.5rem;
+                    object-fit: contain;
                 }
                 & .press-news__article-publisher {
                     color: var(--section-name-accent-color);
-                    margin-right: 10px;
+                    margin-right: 0.3rem;
                 }
                 & .press-news__article-date {
                     color: var(--section-main-color);
-                    margin-left: 10px;
+                    margin-left: 0.3rem;
                 }
                 & .press-news__vertical-divider {
                     font-weight: normal;
                     color: var(--gray-text-color);
-                    font-size: 25px;
+                    font-size: 1.5rem;
                 }
             }
             & .press-news__article-name {
                 font-family: var(--block-title-font);
-                font-weight: 600;
-                font-size: var(--heading-size-mobile);
-                margin-bottom: 50px;
+                font-weight: 400;
+                font-size: 2rem;
+                margin-bottom: 2rem;
+                color: var(--black-text-color)
                 
             }
             & .press-news__article-text {
-                margin-bottom: 50px;
+                margin-bottom: 2rem;
                 font-family: var(--font-family-primary);
                 font-weight: 400;
-                font-size: 17px;
+                font-size: 1.2rem;
                 line-height: 1.5;
                 color: var(--paragraph-text-gray-color);
             }
             & .press-news__read-article-button {
                 display: flex;
-                margin-bottom: 50px;
-                width: 370px;
-                height: 130px;
+                flex: 1 0 auto;
+                width: 9.5rem;
+                height: 3.5rem;
+                margin-bottom: 2rem;
                 background-color: var(--section-main-color);
                 border-radius: 100px;
                 justify-content: center;
                 align-items: center;
                 & a {
-                    font-size: 40px;
+                    font-size: 1.2rem;
                     font-family: var(--font-family-primary);
                     font-weight: 700;
                     color: var(--white-text-color);
                     text-decoration: none;
+                    
+                }
+                &:hover {
+                    background-color: var(--black-text-color);
+                    transition: 1s;
                 }
             }
         }
     }
+    & svg {
+        margin: -10px;
+        padding: -10px;
+        border: none;
+    }
 }
 
-
-@media (min-width: 500px) {
-    .press-news {
-        & .press-news__articles {
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
+@media (max-width: 500px) {
+    .press-news__articles {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         }
-    }
-    
 }

@@ -2,7 +2,7 @@
 .delivery-zone-container {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Центрирование текста по высоте */
+    align-items: center;
     margin: 20px;
 }
 
@@ -12,14 +12,14 @@
     padding-left: 10%;
     text-align: left;
     display: flex;
-    flex-direction: column; /* Чтобы текст оставался вертикально ориентированным */
-    justify-content: center; /* Центрирование по вертикали */
-    height: 100%; /* Наследуйте высоту от родителя или задайте вручную */
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
 .catering-areas__title {
     font-size: 18px;
-    color: red;
+    color: var(--section-name-accent-color);
     font-family: 'Permanent Marker', Arial, sans-serif;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -30,21 +30,21 @@
     font-size: 47px;
     font-weight: bold;
     font-family: Rubik, Arial, sans-serif;
-    color: #333;
+    color: var(--black-text-color);
 }
 
 .catering-areas__description {
     font-size: 20px;
     font-weight: bold;
     font-family: Verdana, sans-serif;
-    color: #333;
+    color: var(--black-text-color);
     margin-bottom: 15px;
 }
 
 .catering-areas__marker {
     font-size: 17px;
     font-family: Verdana, sans-serif;
-    color: #333;
+    color: var(--black-text-color);
     margin-bottom: 15px;
 }
 

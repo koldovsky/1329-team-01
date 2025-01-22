@@ -30,7 +30,7 @@
 .catering-hire-us__description {
   font-family: "Lato", sans-serif;
   font-size: 20px;
-  color: #454545;
+  color: var(--darkish-gray-text-color);
   font-weight: bold;
   padding-bottom: 20px;
   line-height: 30px;
@@ -39,7 +39,7 @@
 .catering-hire-us__list {
   font-family: "Lato", sans-serif;
   font-size: 17px;
-  color: #454545;
+  color: var(--darkish-gray-text-color);
   font-weight: bold;
   line-height: 25px;
 }
@@ -47,7 +47,7 @@
 .catering-hire-us__additional-info {
   font-family: "Lato", sans-serif;
   font-size: 17px;
-  color: #676767;
+  color: var(--description-color);
   padding-top: 20px;
   line-height: 25px;
 }
