@@ -12,7 +12,6 @@ function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
 
 //Nikita Demianov
 function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
-  // code goes here
   return [...arguments].reduce((acc, next) => acc + next, 0);
 }
 //End Nikita Demianov
