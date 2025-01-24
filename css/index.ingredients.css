@@ -95,7 +95,4 @@ svg {
     flex-direction: row;
     justify-content: space-around;
   }
-  .ingredients {
-    display: flex;
-  }
 }
