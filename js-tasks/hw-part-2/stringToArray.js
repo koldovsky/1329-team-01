@@ -9,3 +9,9 @@ function stringToArray(string){
 	return string.split(" ");
   }
   //End Mykola Kokodynskyy
+
+  // Anastasiia Kravchenko
+  function stringToArray(string){
+    return string.split(' ');
+  }
+  //End Anastasiia Kravchenko

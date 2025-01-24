@@ -19,3 +19,15 @@ var max = function(list){
     return list[0];
 }
 //End Mykola Kokodynskyy
+
+// Anastasiia Kravchenko
+var min = function(list){
+    
+    return list.reduce((previous, next) => (next < previous) ? next : previous);
+}
+
+var max = function(list){
+    
+    return list.reduce((previous, next) => (next > previous) ? next : previous);
+}
+//End Anastasiia Kravchenko

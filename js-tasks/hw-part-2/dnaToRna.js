@@ -17,3 +17,9 @@ function DNAtoRNA(dna) {
     return rna;
   }
   //End Mykola Kokodynskyy
+
+  // Anastasiia Kravchenko
+  function DNAtoRNA(dna) {
+    return dna.replaceAll('T', 'U');
+  }
+  //End Anastasiia Kravchenko

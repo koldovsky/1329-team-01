@@ -20,3 +20,13 @@ function min(arr, toReturn) {
       return indexOfMinElement;
   }
   //End Mykola Kokodynskyy
+
+  // Anastasiia Kravchenko
+  function min(arr, toReturn) { 
+    if (toReturn === 'value') {
+      return Math.min(...arr)
+    } else if (toReturn === 'index') {
+      return arr.indexOf(Math.min(...arr))
+    }
+}
+//End Anastasiia Kravchenko
