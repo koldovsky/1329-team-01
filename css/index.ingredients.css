@@ -1,5 +1,98 @@
 /*Hrunt Dmitry*/
 .promo__details {
-    background-color: var(--section-main-color);
-    font-family: var(--block-title-font);
+  background-color: var(--section-main-color);
+  font-family: var(--block-title-font);
+  display: block;
+  padding: 45px 24px;
+}
+
+.promo__offer {
+  font-size: 30px;
+  color: var(--white-text-color);
+  font-weight: bold;
+  margin: 15px 15px;
+}
+
+.promo__note {
+  font-size: 14px;
+  color: var(--white-text-color);
+  margin: 0 15px;
+  text-align: left;
+  margin: 15px 15px;
+}
+
+.promo__star {
+  color: var(--red-color);
+  font-family: var(--font-family-primary);
+}
+
+.promo__link {
+  font-size: 16.5px;
+  font-family: var(--font-family-primary);
+  color: var(--white-text-color);
+  font-weight: bold;
+  padding: 20px 15px;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: var(--red-color);
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  max-width: 100%;
+  &:hover {
+    background-color: var(--contact-us-bgc);
+  }
+}
+
+.ingredients__image {
+  width: 100%;
+  width: 767px;
+}
+
+.ingredients__title {
+  color: var(--section-name-accent-color);
+  font-family: var(--accent-font);
+}
+
+.ingredients__subtitle {
+  font-size: 38px;
+  font-family: var(--block-title-font);
+  font-weight: bold;
+  color: var( --title-contacts-color);
+}
+
+.ingredients__description {
+  font-size: 20px;
+  font-family: var(--font-family-primary);
+  font-weight: bold;
+  color: var(--darkish-gray-text-color);
+}
+
+.ingredients__text {
+  font-size: 17px;
+  font-family: var(--font-family-primary);
+  color: var(--paragraph-text-gray-color);
+}
+
+svg {
+  width: 20px;
+  color: var(--header-secondary-color);
+}
+
+.ingredients__item-text {
+  font-size: 17px;
+  font-family: var(--font-family-primary);
+  color: var(--darkish-gray-text-color);
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .promo__details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
