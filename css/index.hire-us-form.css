@@ -94,8 +94,7 @@
         flex-direction: column;
         align-items: center;
         & .quick-catering-request__form_container {
-            width: auto;
-            margin: 2% 2%;
+            margin: 4% 2% 4% 2%;
         }
     }
 }
