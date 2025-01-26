@@ -1,0 +1,33 @@
+<div class="video.part">
+        <h5 class="red-title">VIDEO</h5>
+        <h1 class="slogan">We Prepare Burgers Los Angeles Loves</h1>
+        <p class="secondary-text">See how we prepare our signature burgers for our beloved clients and what ingredients we use.</p>
+        <div class="video-part">
+            <img scr="#">
+            <p class="video-text">watch videos</p>
+        </div>
+    </div>
+
+    <div class="second-bunner">
+        <div class="part-1">
+            <div class="for_svg-image"></div>
+            <div class="for_text">
+                <h1 class="slogans">Good Value</h1>
+                <p class="secondary-text">As a food truck, we offer low prices on all burgers.</p>
+            </div>
+        </div>
+        <div class="part-2">
+            <div class="for_svg-image"></div>
+            <div class="for_text">
+            <h1 class="slogans">Quality Food</h1>
+            <p class="secondary-text">Our burgers are not junk food! We use the best ingredients.</p>
+            </div>
+        </div>
+        <div class="part-3">
+            <div class="for_svg-image"></div>
+            <div class="for_text"></div>
+            <h1 class="slogans">Fast Service</h1>
+            <p class="secondary-text">AWe promise: no no queues for burgers during lunch time!</p>
+            </div>
+        </div>
+    </div>
