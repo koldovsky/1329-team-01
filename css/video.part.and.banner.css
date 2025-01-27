@@ -1,0 +1,91 @@
+
+.video-part{
+    background-image: url("C:/front-end_study/video-part-and-banner/Video.jpg");
+    width: 100%;
+    height: 714px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding-top: 145px;
+
+}
+
+.pannel{
+width: 411px;
+height: 441px;
+margin-left: 200px;
+}
+
+.red-title{
+    color: red;
+    font-size: 18px;
+}
+
+.slogan{
+    color: white;
+    font-size: 47px;
+}
+
+.secondary-text{
+    color: #ADADAD;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.video-text{
+    color: white;
+    font-size: 20px;;
+}
+
+.video-part1{
+    display: flex;
+    padding: 18px 0;
+}
+
+.play{
+    height: 70px;
+    width: 70px;
+}
+
+.second-banner{
+    display: flex;
+    background-color: #FBF7ED;
+    padding: 75px 0 40px;
+   
+}
+
+.part-of-banner{
+    padding: 0 25px;
+    display: flex;
+}
+
+.slogans{
+    margin:0;
+    padding:0;
+  
+}
+
+.inner-of-banner{
+    margin: 0 23px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.for-svg-image{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EFECE3;
+    border-radius: 50%;
+
+}
+
+.banner-icon{
+    width: 40px;
+    height: 40px;
+}
