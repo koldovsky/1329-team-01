@@ -1,3 +1,6 @@
 @import "global.css";
+@import "global.header.css";
 @import "about.preparation.css";
 @import "about.our-team.css";
+@import './global.under-construct.css';
+@import "global.footer.css";

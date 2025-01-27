@@ -64,8 +64,30 @@
     }
 
     .contact-us__carousel {
+
+        /* border: 2px solid red; */
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         overflow-x: auto;
         white-space: nowrap;
+
+        .footer-contact-us__carousel-left-button, .footer-contact-us__carousel-right-button{
+            height: 30px;
+            width: 30px;
+            margin: 0 -20px;
+            opacity: 0.8;
+
+            font-size: 15px;
+
+            z-index: 1;
+
+            background-color: var(--section-main-color);
+            border: none;
+            border-radius: 50%;
+        }
 
         .contact-us__carousel-items {
             display: flex;
@@ -76,6 +98,8 @@
             .footer-contact-us__carousel-image {
                 width: 100px;
                 height: auto;
+
+                border-radius: 15px;
             }
         }
     }
