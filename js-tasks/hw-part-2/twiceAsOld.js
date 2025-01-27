@@ -9,3 +9,9 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
     return Math.abs(dadYearsOld - sonYearsOld * 2);
   }
 //End Anastasiia Kravchenko
+
+// Vlad Pylypenko
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  return Math.abs(dadYearsOld - sonYearsOld * 2);
+}
+//End Vlad Pylypenko

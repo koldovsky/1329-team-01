@@ -23,3 +23,9 @@ function DNAtoRNA(dna) {
     return dna.replaceAll('T', 'U');
   }
   //End Anastasiia Kravchenko
+
+    // Vlad Pylypenko
+    function DNAtoRNA(dna) {
+      return dna.replaceAll('T', 'U');
+    }
+    //End Vlad Pylypenko

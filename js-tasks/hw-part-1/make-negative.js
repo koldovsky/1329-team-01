@@ -27,3 +27,9 @@ function makeNegative(num) {
   return Math.abs(num) * -1
 }
 //End Nikita Demianov
+
+//Vlad Pylypenko
+function makeNegative(num) {
+  return Math.abs(num)*-1
+}
+//End Vlad Pylypenko

@@ -30,3 +30,9 @@ function min(arr, toReturn) {
     }
 }
 //End Anastasiia Kravchenko
+
+//Vlad Pylypenko
+function min(arr, toReturn) {
+  return toReturn === "value" ? Math.min(...arr) : arr.indexOf(Math.min(...arr));
+}
+//End Vlad Pylypenko

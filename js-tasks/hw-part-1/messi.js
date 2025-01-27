@@ -15,3 +15,9 @@ function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   return [...arguments].reduce((acc, next) => acc + next, 0);
 }
 //End Nikita Demianov
+
+//Vlad Pylypenko
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+}
+//End Vlad Pylypenko

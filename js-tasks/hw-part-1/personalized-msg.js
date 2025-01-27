@@ -28,3 +28,9 @@ function greet (name, owner) {
   return name === owner ? 'Hello boss' : 'Hello guest';
 }
 //End Nikita Demianov
+
+//Vlad Pylypenko
+function greet (name, owner) {
+  return name === owner ? 'Hello boss' : 'Hello guest';
+}
+//End Vlad Pelepenko

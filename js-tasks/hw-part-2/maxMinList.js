@@ -31,3 +31,15 @@ var max = function(list){
     return list.reduce((previous, next) => (next > previous) ? next : previous);
 }
 //End Anastasiia Kravchenko
+
+// Vlad Pylypenko
+var min = function(list){
+    
+    return list.reduce((previous, next) => (next < previous) ? next : previous);
+}
+
+var max = function(list){
+    
+    return list.reduce((previous, next) => (next > previous) ? next : previous);
+}
+//End Vlad Pylypenko

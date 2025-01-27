@@ -10,3 +10,9 @@ function doubleInteger(i) {
     return i*2;
   }
 //End Anastasiia Kravchenko
+
+// Vlad Pylypenko
+function doubleInteger(i) {
+  return i*2;
+}
+//End Vlad Pylypenko

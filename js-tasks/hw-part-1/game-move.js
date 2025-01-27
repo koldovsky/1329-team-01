@@ -8,3 +8,9 @@ function move (position, roll) {
   return position + roll * 2;
 }
 //End Nikita Demianov
+
+//Vlad Pylypenko
+function move (position, roll) {
+  return position + roll *2;
+}
+//End Vlad Pylypenko

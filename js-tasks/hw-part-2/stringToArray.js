@@ -15,3 +15,9 @@ function stringToArray(string){
     return string.split(' ');
   }
   //End Anastasiia Kravchenko
+
+//Vlad Pylypenko
+function stringToArray(string) {
+	return Array.from(string.split(' '));
+}
+//End Vlad Pylypenko
