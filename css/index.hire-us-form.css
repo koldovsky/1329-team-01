@@ -82,8 +82,8 @@
             }
         }
     }
-    & svg {
-        margin: -11px;
+    & svg, rect {
+        margin-top: -9px;
         padding: 0;
         border: none;
         width: 100%;
