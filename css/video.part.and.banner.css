@@ -1,3 +1,4 @@
+@import "global.css";
 
 .video-part{
     background-image: url("../img/video part and bunner/Video.jpg");
@@ -19,11 +20,13 @@ margin-left: clamp(0px, 10vw, 200px);
 .red-title{
     color: red;
     font-size: 18px;
+    font-family: 'Permanent market';
 }
 
 .slogan{
     color: white;
     font-size: 47px;
+    font-family: 'Rubik';
 }
 
 .secondary-text{
@@ -31,11 +34,13 @@ margin-left: clamp(0px, 10vw, 200px);
     font-size: 20px;
     margin: 0;
     padding: 0;
+    font-family: 'Lato';
 }
 
 .video-text{
     color: white;
-    font-size: 20px;;
+    font-size: 20px;
+    font-family: 'Lato';
 }
 
 .video-part1{
@@ -64,6 +69,7 @@ margin-left: clamp(0px, 10vw, 200px);
 .slogans{
     margin:0;
     padding:0;
+    font-family: 'Lato';
   
 }
 
