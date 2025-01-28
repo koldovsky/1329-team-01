@@ -20,7 +20,7 @@ margin-left: clamp(0px, 10vw, 200px);
 .red-title{
     color: red;
     font-size: 18px;
-    font-family: 'Permanent market';
+    font-family: 'Permanent market', sans-serif;
 }
 
 .slogan{
