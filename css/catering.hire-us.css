@@ -1,5 +1,6 @@
 .catering-hire-us__image {
-  width: 1140px;
+  max-width: 100%;
+  width: auto;
   display: block;
   width: 100%;
   height: auto;
@@ -68,7 +69,7 @@
   }
   .catering-hire-us__image {
     width: 1140px;
-    height: 100%;
+    height: 100%; 
     object-fit: cover;
   }
   .catering-hire-us__content {

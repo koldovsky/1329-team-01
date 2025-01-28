@@ -98,10 +98,11 @@
     }
     
     @media (min-width: 991px) {
-      .a {
+      .catering-options__option-block {
         display: grid;
         grid-template-columns: repeat(3, 1fr); 
         gap: 30px; 
+        max-width: 100%;
       }
     }
 
