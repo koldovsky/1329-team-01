@@ -81,6 +81,11 @@ margin-left: clamp(0px, 10vw, 200px);
     align-items: center; 
 }
 
+.secondary-texts{
+    font-size: 17px;
+    font-family: 'Lato';
+}
+
 .for-svg-image{
     width: 100px;
     height: 100px;
