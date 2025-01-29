@@ -13,6 +13,7 @@ function inputBlurHandler() {
 
 function submitMouseOverHandler() {
   this.style.position = 'absolute';
+  this.style.zIndex = '10';
   const containerRect = container.getBoundingClientRect();
   const maxX = containerRect.width - this.offsetWidth;
   const maxY = containerRect.height - this.offsetHeight;
