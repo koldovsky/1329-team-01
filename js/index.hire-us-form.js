@@ -1,6 +1,6 @@
 const inputElements = document.querySelectorAll('input');
 const submitBtn = document.querySelector('.quick-catering-request__submit');
-const container = document.querySelector('.quick-catering-request__container');
+const container = document.querySelector('.quick-catering-request__form_container');
 
 function inputFocusHandler() {
   this.style.boxShadow = '0 0 10px 5px rgba(0, 0, 0, 0.3)';
