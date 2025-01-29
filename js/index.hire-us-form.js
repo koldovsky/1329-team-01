@@ -1,5 +1,6 @@
 const inputElements = document.querySelectorAll('input');
 const submitBtn = document.querySelector('.quick-catering-request__submit');
+const container = document.querySelector('.quick-catering-request__container');
 
 function inputFocusHandler() {
   this.style.boxShadow = '0 0 10px 5px rgba(0, 0, 0, 0.3)';
@@ -12,8 +13,9 @@ function inputBlurHandler() {
 
 function submitMouseOverHandler() {
   this.style.position = 'absolute';
-  const maxX = window.innerWidth - this.offsetWidth;
-  const maxY = window.innerHeight - this.offsetHeight;
+  const containerRect = container.getBoundingClientRect();
+  const maxX = containerRect.width - this.offsetWidth;
+  const maxY = containerRect.height - this.offsetHeight;
 
   const randomX = Math.random() * maxX;
   const randomY = Math.random() * maxY;
