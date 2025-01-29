@@ -11,6 +11,7 @@
         .contact-us__info-description {
             display: flex;
             flex-direction: column;
+            
             gap: 20px;
             margin-bottom: 30px;
 
@@ -45,7 +46,6 @@
         }
 
         .contact-us__info-addresses {
-
             display: flex;
             flex-direction: column;
             gap: 10px;
@@ -63,54 +63,82 @@
         }
     }
 
-    .contact-us__carousel {
+    .carousel-container {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1200px;
+        position: relative;
+        padding: 0 40px;
 
-        /* border: 2px solid red; */
+        .carousel {
+            width: 100%;
+            overflow: hidden;
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
+            .carousel-track {
+                display: flex;
+                transition: transform 0.5s ease-in-out;
 
-        overflow-x: auto;
-        white-space: nowrap;
+                .carousel-slide {
+                    flex-shrink: 0;
+                    padding: 10px;
+                    width: 100%;
 
-        .footer-contact-us__carousel-left-button, .footer-contact-us__carousel-right-button{
-            height: 30px;
-            width: 30px;
-            margin: 0 -20px;
-            opacity: 0.8;
+                    .slide-content {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 24px;
+                        border-radius: 8px;
 
-            font-size: 15px;
-
-            z-index: 1;
-
-            background-color: var(--section-main-color);
-            border: none;
-            border-radius: 50%;
+                        .slide-content-image {
+                            width: 240px;
+                            border-radius: 15px;
+                        }
+                    }
+                }
+            }
         }
 
-        .contact-us__carousel-items {
-            display: flex;
-            flex-direction: row;
-            gap: 10px;
-            list-style: none;
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            font-size: 18px;
+        }
 
-            .footer-contact-us__carousel-image {
-                width: 100px;
-                height: auto;
+        .carousel-button:hover {
+            background: #f0f0f0;
+        }
 
-                border-radius: 15px;
-            }
+        .carousel-button.prev {
+            left: 0;
+        }
+
+        .carousel-button.next {
+            right: 0;
         }
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     .contact-us {
         .contact-us__info {
             margin: 0 10%;
             flex-direction: row;
-            justify-content:space-evenly;
+            justify-content: space-evenly;
         }
+    }
+}
+
+@media (min-width: 1024px) {
+    .carousel-slide {
+        width: 33.333%;
     }
 }
