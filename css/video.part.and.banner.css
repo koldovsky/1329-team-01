@@ -99,7 +99,7 @@ margin-left: clamp(0px, 10vw, 200px);
     height: 50px;
 }
 
-@media(max-width:750px){
+@media(max-width:950px){
 
 .inner-of-banner{
     display: inline;
