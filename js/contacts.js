@@ -1,4 +1,6 @@
-import('./contacts-form.js');
+function init() {
+    import('./contacts-form.js');
+}
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
 let loadedPartialsCount = 0;
