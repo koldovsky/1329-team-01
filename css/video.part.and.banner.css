@@ -105,11 +105,6 @@ margin-left: clamp(0px, 10vw, 200px);
     height: 50px;
 }
 
-.crossing{
-    width: 100%;
-}
-
-
 @media(max-width:950px){
 
 .inner-of-banner{
