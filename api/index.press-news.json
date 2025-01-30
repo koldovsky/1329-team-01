@@ -1,0 +1,29 @@
+[
+    {
+        "img": "img/press-news/article-1-flaunt.webp",
+        "alt": "A couple sitting at a table, sharing a moment while enjoying burgers. In the foreground, a gourmet burger on a plate is in focus, with a second burger and a bowl of potato chips slightly blurred to the side. Warm ambient lighting creates a cozy atmosphere.",
+        "publisher": "FLAUNT MAGAZINE",
+        "date": "JULY 28",
+        "title-pt1": "BuzzFeed Loves ",
+        "title-pt2": "Freddy Burgers!",
+        "text" : "Where have you had the most delicious burgers in Los Angeles? Yesterday, walking around the city center, we saw an unusual food truck..."
+    },
+    {
+        "img": "img/press-news/article-2-conde-nast.webp",
+        "alt": "Two gourmet burgers, one with a sesame seed brown bun and the other with a sesame seed black bun, topped with fresh lettuce, tomato, cheese, and pickles. Each burger is skewered with a stick holding a grilled chicken wing. Served alongside onion rings, French fries, ketchup, and a glass of soda in the background.",
+        "publisher": "CONDE NAST TRAVELER",
+        "date": "JULY 12",
+        "title-pt1": "Top 50 Food Trucks Worth ",
+        "title-pt2": "Traveling for",
+        "text" : "If you don't try street food in a new city, you will not understand anything about its atmosphere, local tastes, and culture."
+    },
+    {
+        "img": "img/press-news/article-3-c.webp",
+        "alt": "A cheerful couple enjoying food outdoors in front of a modern food truck with wooden paneling. They are holding food containers and smiling at each other, surrounded by colorful triangular bunting decorations. Bean bag chairs and a bicycle are visible in the background, creating a casual and festive atmosphere.",
+        "publisher": "C MAGAZINE",
+        "date": "JULY 02",
+        "title-pt1": "Top 10 NYC Burger ",
+        "title-pt2": "Food Trucks",
+        "text" : "Tired of pizza for lunch? Why not get out of your stuffy office and order a fresh and juicy burger? Here are the best burger food trucks in LA."
+    }
+]
