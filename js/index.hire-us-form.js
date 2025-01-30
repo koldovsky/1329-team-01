@@ -14,8 +14,10 @@ function inputBlurHandler() {
   this.style.boxShadow = 'none';
 }
 
-function phoneNumberHint() {
+function phoneNumberHint(e) {
   hint.style.visibility = 'visible';
+  hint.style.left = `${e.clientX}px`;
+  hint.style.top = `${e.clientY}px`;
 }
 
 function hidePhoneNumberHint() {

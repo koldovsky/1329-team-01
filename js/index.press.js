@@ -13,7 +13,7 @@ function renderArticles(articles) {
             <span class="press-news__article-date">${article.date}</span>
             </figcaption>
         </figure>
-        <div class="press-news__article-name"><h4>${article.title-pt1}</h4><h4>${article.title-pt2}</h4></div>
+        <div class="press-news__article-name"><h4>${article.titlePt1}</h4><h4>${article.titlePt2}</h4></div>
         <p class="press-news__article-text">${article.text}</p>
         <div class="press-news__read-article-button">
             <a href="#">Read Article</a>

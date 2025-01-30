@@ -62,19 +62,18 @@
                         font-weight: 600;
                         line-height: 1.5;
                     }
-                }
-                & .quick-catering-request__hint {
-                    visibility: hidden;
-                    width: 120px;
-                    background-color: var(--background-footer-color);
-                    color: var(--white-text-color);
-                    text-align: center;
-                    padding: 5px 0;
-                    border-radius: 6px;
-                    position: absolute;
-                    z-index: 1;
-                    top: -5px;
-                    left: 105%;
+                    & .quick-catering-request__hint {
+                        visibility: hidden;
+                        width: 120px;
+                        background-color: var(--background-footer-color);
+                        color: var(--white-text-color);
+                        text-align: center;
+                        padding: 5px 0;
+                        border-radius: 15px;
+                        font-size: 0.7rem;
+                        position: absolute;
+                        z-index: 1;
+                      }
                 }
                 & button {
                     padding: 0.8rem;
