@@ -26,7 +26,7 @@ function renderArticles(articles) {
 }
 
 
-const response = await fetch('../api/index.press-news.json');
+const response = await fetch('api/index.press-news.json');
 const articles = await response.json();
 
 renderArticles(articles);

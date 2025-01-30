@@ -18,6 +18,10 @@ function phoneNumberHint() {
   hint.style.visibility = 'visible';
 }
 
+function hidePhoneNumberHint() {
+  hint.style.visibility = 'hidden';
+}
+
 async function sendData(e) {
   e.preventDefault();
   const formData = new FormData(this);
@@ -52,5 +56,6 @@ for (const inputElem of inputElements) {
 }
 
 inputPhone.addEventListener('mouseover', phoneNumberHint);
+inputPhone.addEventListener('mouseout', hidePhoneNumberHint);
 
 form.addEventListener('submit', sendData)
