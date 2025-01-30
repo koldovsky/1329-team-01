@@ -2,8 +2,6 @@ const inputElements = document.querySelectorAll('input');
 const submitBtn = document.querySelector('.quick-catering-request__submit');
 const form = document.querySelector('#hire-us-form')
 const result = document.querySelector('#result');
-const hint = document.querySelector('.quick-catering-request__hint');
-const inputPhone = document.querySelector('input[type="tel"]');
 
 function inputFocusHandler() {
   this.style.boxShadow = '0 0 10px 5px rgba(0, 0, 0, 0.3)';
@@ -12,16 +10,6 @@ function inputFocusHandler() {
 
 function inputBlurHandler() {
   this.style.boxShadow = 'none';
-}
-
-function phoneNumberHint(e) {
-  hint.style.visibility = 'visible';
-  hint.style.left = `${e.clientX}px`;
-  hint.style.top = `${e.clientY}px`;
-}
-
-function hidePhoneNumberHint() {
-  hint.style.visibility = 'hidden';
 }
 
 async function sendData(e) {
@@ -56,8 +44,5 @@ for (const inputElem of inputElements) {
   inputElem.addEventListener('focus', inputFocusHandler);
   inputElem.addEventListener('blur', inputBlurHandler);
 }
-
-inputPhone.addEventListener('mouseover', phoneNumberHint);
-inputPhone.addEventListener('mouseout', hidePhoneNumberHint);
 
 form.addEventListener('submit', sendData)
