@@ -10,12 +10,14 @@
       <p class="quick-catering-request__hire-us">Hire Us</p>
       <h3 class="quick-catering-request__form-name">Quick Catering Request</h3>
       <form
-        action="#"
+        id="hire-us-form"
         class="quick-catering-request__form"
+        method = "POST"
       >
         <fieldset
           class="quick-catering-request__contact-info-fields"
         >
+          <input type="hidden" name="access_key" value="06e7af2c-19ad-4c45-9ecc-9938bccab32f">
           <legend>
             We will contact you soon to agree on details and throw a gastronomic
             party!
@@ -43,6 +45,7 @@
         <button type="submit" class="quick-catering-request__submit">
           Send
         </button>
+        <div id="result"></div>
       </form>
     </div>
   </div>

@@ -78,6 +78,10 @@
                         background-color: var(--section-main-color);
                     }
                 }
+                & #result {
+                    color: var(--darkish-gray-text-color);
+                    font-size: 0.7rem;
+                }
 
             }
         }
