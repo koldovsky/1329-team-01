@@ -1,0 +1,116 @@
+.services {
+  background-color: var(--background-cream-color);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto; 
+}
+
+.services__title {
+  color: var(--section-name-accent-color);
+  font-family: var(--accent-font);
+  font-size: 18px;
+  text-align: center;
+  padding: 90px 0 0 0;
+  font-weight: normal;
+}
+
+.services__subtitle {
+  color: var(--black-text-color);
+  font-size: 38px;
+  font-family: var(--block-title-font);
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 0 0 0;
+}
+
+.services__description {
+  color: var(--darkish-gray-text-color);
+  font-size: 20px;
+  font-family: var(--font-family-primary);
+  font-weight: bold;
+  padding: 5px 0 15px 0;
+  margin: 20px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.services__item--franchising,
+.services__item--catering {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.services__image {
+  width: 50%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.services__text {
+  width: 50%;
+  padding: 40px;
+}
+
+.services__item-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.services__item-description {
+  font-size: 18px;
+  color: var(--darkish-gray-text-color);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.services__item-features {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  color: var(--description-color);
+}
+
+.services__link {
+  display: inline-block;
+  background-color: var(--section-main-color);
+  color: var(--white-text-color);
+  font-family: var(--font-family-primary);
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.services__link:hover {
+  background-color: var(--contact-us-bgc);
+}
+
+@media (max-width: 768px) {
+  .services__item--franchising,
+  .services__item--catering {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .services__image {
+    width: 100%;
+    height: auto;
+  }
+
+  .services__text {
+    width: 100%;
+  }
+}
