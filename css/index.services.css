@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .services__title {
@@ -45,32 +45,40 @@
   justify-content: space-between;
   background: white;
   border-radius: 15px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   margin-bottom: 40px;
+  gap: 30px;
+}
+
+.services__item--catering {
+flex-direction: row-reverse;
+padding-left: 30px;
 }
 
 .services__image {
   width: 50%;
   object-fit: cover;
   height: 100%;
+
 }
 
 .services__text {
   width: 50%;
-  padding: 40px;
 }
 
 .services__item-title {
-  font-size: 24px;
+  font-size: 36px;
   font-weight: bold;
+  font-family: var(--block-title-font);
+  color: var(--black-text-color);
+  margin: 30px 0;
 }
 
 .services__item-description {
   font-size: 18px;
   color: var(--darkish-gray-text-color);
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .services__item-features {
@@ -79,6 +87,13 @@
   gap: 10px;
   font-size: 16px;
   color: var(--description-color);
+}
+
+.services__item-text {
+  font-family: var(--font-family-primary);
+  font-size: 17px;
+  color: var(--description-color);
+  margin: 10px 0;
 }
 
 .services__link {
@@ -92,17 +107,33 @@
   font-weight: bold;
   margin-top: 20px;
   transition: background-color 0.3s;
+  &:hover {
+    background-color: var(--contact-us-bgc);
+  }
+  
 }
 
-.services__link:hover {
-  background-color: var(--contact-us-bgc);
+.services__action {
+  display: inline-block;
+  background-color: var(--section-main-color);
+  color: var(--white-text-color);
+  font-family: var(--font-family-primary);
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 5px;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: var(--contact-us-bgc);
+  }
 }
 
 @media (max-width: 768px) {
   .services__item--franchising,
   .services__item--catering {
     flex-direction: column;
-    text-align: center;
+    align-items: flex-start;
   }
 
   .services__image {
@@ -110,7 +141,14 @@
     height: auto;
   }
 
-  .services__text {
+  .services__text,
+  .services__details {
     width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 20px; 
+    margin: 0 15px; 
   }
 }
