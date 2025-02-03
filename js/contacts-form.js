@@ -1,7 +1,6 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("contact-form");
-    const submitButton = form.querySelector("button[type='submit']");
-    const message = document.getElementById("form-message");
+const form = document.getElementById("contact-form");
+const submitButton = form.querySelector("button[type='submit']");
+const message = document.getElementById("form-message");
   
     form.addEventListener("submit", async function (e) {
       e.preventDefault();
@@ -43,5 +42,4 @@ document.addEventListener("DOMContentLoaded", function () {
   
       setTimeout(() => (message.textContent = ""), 3000);
     });
-  });
   
