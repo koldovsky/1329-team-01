@@ -2,6 +2,7 @@ const inputElements = document.querySelectorAll('input');
 const submitBtn = document.querySelector('.quick-catering-request__submit');
 const form = document.querySelector('#hire-us-form')
 const result = document.querySelector('#result');
+const phoneInput = document.querySelector('input[type="tel"]');
 
 function inputFocusHandler() {
   this.style.boxShadow = '0 0 10px 5px rgba(0, 0, 0, 0.3)';
@@ -10,6 +11,10 @@ function inputFocusHandler() {
 
 function inputBlurHandler() {
   this.style.boxShadow = 'none';
+}
+
+function phoneNumValidation() {
+  this.setCustomValidity('Please enter a valid phone number, e.g., +1234567890');
 }
 
 async function sendData(e) {
@@ -46,3 +51,4 @@ for (const inputElem of inputElements) {
 }
 
 form.addEventListener('submit', sendData)
+phoneInput.addEventListener('invalid', phoneNumValidation);

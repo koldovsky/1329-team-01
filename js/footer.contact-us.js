@@ -77,13 +77,5 @@ class Carousel {
       }, 500);
     }
   }
-  
-  // Initialize carousel
-  window.addEventListener('load', () => {
-    new Carousel();
-  });
-  
 
-// window.addEventListener('load', () => {
-//     console.log('Contact us form loaded');
-//   });
+  new Carousel();

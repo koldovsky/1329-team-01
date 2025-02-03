@@ -6,7 +6,7 @@ const message = document.getElementById("form-message");
       e.preventDefault();
       
       submitButton.disabled = true;
-      submitButton.textContent = "Please wait...";
+      submitButton.textContent = "Please wait....";
       
       const formData = new FormData(form);
       const object = {};
