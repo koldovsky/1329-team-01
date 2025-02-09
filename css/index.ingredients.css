@@ -48,7 +48,9 @@
 
 .ingredients__image {
   width: 100%;
+  height: auto;
   display: block;
+  object-fit: cover;
 }
 
 .ingredients__content {
@@ -127,6 +129,14 @@ svg {
     display: flex;
     align-items: center;
     flex-direction: row;
+    align-items: stretch;
+  }
+
+  .ingredients__image {
+    width: 50%;
+    height: auto;
+    display: block;
+    object-fit: cover;
   }
 
   .ingredients__content {
