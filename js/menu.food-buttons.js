@@ -8,3 +8,5 @@ function changeMenu(menuId)
     }
     document.getElementById(menuId).style.display = "grid";
 }
+
+changeMenu('burgers')
