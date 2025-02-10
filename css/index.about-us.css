@@ -1,121 +1,160 @@
 .about-us {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 20px;
-    background-color: #f7f8fa;
-    background-image: url('path-to-background-image.png'); /* Add decorative background if needed */
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .about-us__content {
-    max-width: 800px;
-    text-align: left;
-  }
-  
-  .about-us__title {
-    font-size: 1.5rem;
-    font-family: var(--accent-font);
-    font-weight: bold;
-    color: var(--red-color);
-    text-transform: uppercase;
-    margin-bottom: 10px;
-  }
-  
-  .about-us__subtitle {
-    font-size: 2.5rem;
-    font-family: var(--block-title-font);
-    font-weight: bold;
-    color: #282623;
-    margin-bottom: 15px;
-    line-height: 1.2;
-  }
-  
-  .about-us__description {
-    font-size: 1.2rem;
-    font-family: var(--font-family-primary);
-    font-weight: 700;
-    color: var(--gray-text-color);
-    margin-bottom: 20px;
-  }
-  
-  .about-us__text {
-    font-size: 1rem;
-    font-family: var(--font-family-primary);
-    font-weight: 400;
-    line-height: 1.6;
-    margin-bottom: 25px;
-    color: var(--description-color);
-  }
-  
-  .about-us__highlights-list {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 30px;
-  }
-  
-  .about-us__list-item {
-    display: flex;
-    align-items: center;
-    font-size: 1rem;
-    font-family: var(--font-family-primary);
-    color: var(--gray-text-color);
-    font-weight: 700;
-    gap: 10px;
-  }
-  
-  .about-us__list-item svg {
-    flex-shrink: 0;
-    width: 20px;
-    height: 20px;
-    color: #fbbe36; /* Yellow accent color for icons */
-  }
-  
-  .about-us__info {
-    font-family: var(--font-family-primary);
-    color: var(--description-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 15px;
+  background-color: #f7f8fa;
+  background-image: url(/img/index/about-us/about-us-background.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-us__inner {
+  max-width: 1200px;
+  width: 100%;
+  text-align: left;
+}
+
+.about-us-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+.about-us-grid__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-us-grid__item-inner {
+  padding: 15px;
+  text-align: left;
+}
+
+/* Image Styling */
+.about-us-picture-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.about-us-picture__image {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.about-us__title {
+  font-size: 1.5rem;
+  font-family: var(--accent-font);
+  font-weight: bold;
+  color: var(--red-color);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.about-us__subtitle {
+  font-size: 2.5rem;
+  font-family: var(--block-title-font);
+  font-weight: bold;
+  color: #282623;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.about-us__description {
+  font-size: 1.2rem;
+  font-family: var(--font-family-primary);
+  font-weight: 700;
+  color: var(--gray-text-color);
+  margin-bottom: 20px;
+}
+
+.about-us__text {
+  font-size: 1rem;
+  font-family: var(--font-family-primary);
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: var(--description-color);
+}
+
+.about-us__highlights-list {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.about-us__list-item {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-family: var(--font-family-primary);
+  color: var(--gray-text-color);
+  font-weight: 700;
+  gap: 10px;
+}
+
+.about-us__list-item svg {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  color: #fbbe36; 
+}
+
+.about-us__info {
+  font-family: var(--font-family-primary);
+  color: var(--description-color);
+}
+
+.about-us__cta {
+  margin-top: 20px;
+}
+
+.about-us__cta a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e63946;
+  font-family: var(--font-family-primary);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.about-us__cta a:hover {
+  background-color: #d62828;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .about-us-grid {
+      grid-template-columns: 1fr;
   }
 
-  .about-us__cta {
-    margin-top: 20px;
+  .about-us__title {
+      font-size: 1.2rem;
   }
-  
-  .about-us__cta a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #e63946;
-    font-family: var(--font-family-primary);
-    color: #fff;
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 25px;
-    transition: background-color 0.3s ease;
+
+  .about-us__subtitle {
+      font-size: 2rem;
   }
-  
-  .about-us__cta a:hover {
-    background-color: #d62828;
+
+  .about-us__description {
+      font-size: 1rem;
   }
-  
-  /* Decorative Elements */
-  .about-us::before {
-    content: '';
-    position: absolute;
-    top: -10%;
-    left: -10%;
-    width: 150%;
-    height: 150%;
-    background-image: url('path-to-decorative-leaf.png'); /* Optional decorative leaves or shapes */
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.1;
-    z-index: 0;
+
+  .about-us__text {
+      font-size: 0.9rem;
   }
-  
-  .about-us__content {
-    position: relative;
-    z-index: 1;
+
+  .about-us__highlights-list {
+      flex-direction: column;
   }
+}
