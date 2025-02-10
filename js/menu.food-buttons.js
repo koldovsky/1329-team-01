@@ -1,6 +1,6 @@
 function changeMenu(menuId)
 {
-    const allMenu = document.getElementsByClassName("menu__food-info");
+    let allMenu = document.getElementsByClassName("menu__food-info");
 
     for (let i = 0; i < allMenu.length; i++) {
         allMenu[i].style.display = "none";
