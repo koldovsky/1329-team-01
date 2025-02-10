@@ -30,7 +30,7 @@
     font-size: 16px;
     font-weight: bold;
     color: var( --black-text-color);
-    position: relative;
+    position: relative;    
 }
 
 .menu__button.active::after {
@@ -90,7 +90,7 @@
 }
 
 .menu__item-price {
-    color: #E31837;
+    color: var(--red-color);
     font-size: 30px;
     font-family: var(--block-title-font);
     font-weight: bold;
@@ -101,7 +101,7 @@
 }
 
 .menu__description {
-    color: #666;
+    color: var(--description-color);
     font-size: 17px;
     line-height: 1.5;
     font-family: var(--font-family-primary);
@@ -137,7 +137,7 @@
     }
     
     .menu__list {
-        flex-direction: column;
+        flex-direction: row;
         gap: 15px;
     }
     
@@ -154,8 +154,10 @@
     } 
 }
 
-@media (max-width: 450px) {
+@media (max-width: 485px) {
     .menu__item-price {
+        left: 100px;
+        top: 70px;
         font-size: 18px;
     } 
 }
