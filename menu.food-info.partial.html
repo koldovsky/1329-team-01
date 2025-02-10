@@ -3,7 +3,7 @@
   <nav class="menu__navigation">
     <ul class="menu__list">
       <li class="menu__item">
-        <button class="menu__button">
+        <button class="menu__button" onclick="changeMenu('burgers')">
           <img
             class="menu__logo"
             width="25"
@@ -14,7 +14,7 @@
         </button>
       </li>
       <li class="menu__item">
-        <button class="menu__button">
+        <button class="menu__button" onclick="changeMenu('salads')">
           <img
             class="menu__logo"
             width="25"
@@ -25,7 +25,7 @@
         </button>
       </li>
       <li class="menu__item">
-        <button class="menu__button">
+        <button class="menu__button" onclick="changeMenu('drinks')">
           <img
             class="menu__logo"
             width="25"
@@ -37,7 +37,7 @@
       </li>
     </ul>
   </nav>
-  <div class="menu__food__info">
+  <div class="menu__food-info" id = 'burgers'>
     <article class="menu__item">
       <img
         class="menu__image"
@@ -152,7 +152,7 @@
     </article>
   </div>
 
-  <div class="menu__food__info">
+  <div class="menu__food-info" id = 'salads'>
     <article class="menu__item">
       <img
         class="menu__image"
@@ -240,7 +240,7 @@
     </article>
   </div>
 
-  <div class="menu__food__info">
+  <div class="menu__food-info" id = 'drinks'>
     <article class="menu__item">
       <img width="70" src="img/drinks-photo/coca-cola.png" alt="Coca-Cola" />
       <h3 class="menu__item-name">Coca-Cola</h3>

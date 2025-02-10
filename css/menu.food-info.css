@@ -1,66 +1,132 @@
-.menu{
-    background:url('../img/choice-menu/menu-background.jpg') ;    
-    padding: 0 24px;
-}
-
-.menu__list{
-    display: flex;
-    flex-direction: row;
+/* Загальні стилі меню */
+.menu {
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
 }
 
-.menu__item-name{
-    font-family: var(--font-family-primary);
-    font-weight: 600;
-
-}
-.menu__item-price{
-    display: flex;
-    color: var(--red-color);
-    font-family: var(--block-title-font);
-    font-weight: 500;
-    font-size: 24px;
-    flex-direction: column;
-}
-
-.menu__description{
-    font-family: var(--font-family-primary);
-    color: var(--description-color);
-    font-weight: lighter;
-}
-
-.menu__food__info{
-    display: grid;
-    gap: 100px
-}
-.menu__image{
-    width: 20%;
-}
-
-.menu__food-button{    
+/* Навігація */
+.menu__navigation {
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 20px auto 0;
-    background-color: var(--section-main-color);
-    width: 133px;
-    height: 52px;
+    margin-bottom: 40px;
+}
+
+.menu__list {
     display: flex;
     justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    font-family: var(--font-family-primary);
-    color: var(--white-text-color);    
-    font-weight: bold;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-@media (min-width: 480px) {
-    .menu__food__info{
-        grid-template-columns: 1fr 1fr ;
-    }
-    .menu__item-price{
-        flex-direction: row;
-    }
+.menu__button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #333;
+    position: relative;
+}
 
+.menu__button.active::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #FFC107;
+}
+
+.menu__logo {
+    width: 25px;
+    height: 25px;
+}
+
+
+.menu__food-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+
+.menu__item {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.menu__item:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.menu__image {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.menu__item-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.menu__item-price {
+    color: #E31837;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.menu__description {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Кнопка завантаження */
+.menu__food-button {
+    display: block;
+    width: fit-content;
+    margin: 40px auto;
+    padding: 12px 24px;
+    background-color: #FFC107;
+    color: #333;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.menu__food-button:hover {
+    background-color: #FFB300;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .menu__food-info {
+        grid-template-columns: 1fr;
+    }
     
+    .menu__list {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .menu__button {
+        justify-content: center;
+    }
 }

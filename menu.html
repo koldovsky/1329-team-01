@@ -7,15 +7,15 @@
     <title>Menu Page: Burgers Food Truck</title>
     <link rel="stylesheet" href="css/index.css" />
     <link
-    rel="shortcut icon"
-    href="./img/global-image/favicon.png"
-    type="image/x-icon"
-  />
+      rel="shortcut icon"
+      href="./img/global-image/favicon.png"
+      type="image/x-icon"
+    />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
       crossorigin="anonymous"
-    ></script>
+    ></script>         
   </head>
 
   <body>
@@ -46,11 +46,12 @@
       ></div>
       <!-- Nikita Demianov -->
       <section
-      data-hx-trigger="load"
+        data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="global.footer.partial.html"
       ></section>
       <!-- End Nikita Demianov -->
     </footer>
-  </body>
+    <script src="./js/menu.js"></script>    
+  </body>  
 </html>
