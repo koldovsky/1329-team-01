@@ -107,3 +107,12 @@
         }
     }
 }
+
+
+@media (max-width: 1180px) {
+    .quick-catering-request__section {
+        & svg {
+            margin-top: -15px;
+        }
+    }
+}
