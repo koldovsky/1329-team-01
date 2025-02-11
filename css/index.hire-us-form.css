@@ -86,16 +86,6 @@
             }
         }
     }
-    & svg {
-        margin-bottom: -10px;
-        padding: 0;
-        border: none;
-        width: 100%;
-        height: auto;
-        & rect, path {
-            border: none;
-        }
-    }
 }
 
 @media (max-width: 720px) {
@@ -104,15 +94,6 @@
         align-items: center;
         & .quick-catering-request__form_container {
             margin: 1rem 0.5rem 1rem 0.5rem;
-        }
-    }
-}
-
-
-@media (max-width: 1180px) {
-    .quick-catering-request__section {
-        & svg {
-            margin-top: -15px;
         }
     }
 }
